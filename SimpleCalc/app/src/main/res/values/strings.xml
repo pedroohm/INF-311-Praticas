@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SimpleCalc</string>
+    <string name="firstValue">Valor 1:</string>
+    <string name="secValue">Valor 2:</string>
+    <string name="btn_add">+</string>
+    <string name="btn_sub">-</string>
+    <string name="btn_multi">x</string>
+    <string name="btn_div">/</string>
+    <string name="result">O resultado é: </string>
+</resources>
