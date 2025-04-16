@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report">
+
+    <TextView
+        android:id="@+id/app_nameReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#757474"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportMain"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_nameReport"
+        android:layout_margin="18dp"
+        android:text="@string/report"
+        android:textSize="25sp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameR"
+        android:text="@string/name"
+        android:layout_below="@id/reportMain"
+        android:layout_alignStart="@id/reportMain"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageR"
+        android:text="@string/age"
+        android:layout_below="@id/nameR"
+        android:layout_alignStart="@id/reportMain"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weightR"
+        android:text="@string/weight"
+        android:layout_below="@id/ageR"
+        android:layout_alignStart="@id/reportMain"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heightR"
+        android:text="@string/height"
+        android:layout_below="@id/weightR"
+        android:layout_alignStart="@id/reportMain"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imcR"
+        android:text="@string/imc_report"
+        android:layout_below="@id/heightR"
+        android:layout_alignStart="@id/reportMain"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classR"
+        android:text="@string/class_report"
+        android:layout_below="@id/imcR"
+        android:layout_alignStart="@id/reportMain"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classR"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newReport"
+        android:onClick="newCalc"
+        />
+
+
+
+
+
+</RelativeLayout>
