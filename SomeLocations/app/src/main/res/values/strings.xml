@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Some Locations</string>
+    <string name="dpi">DPI/UFV</string>
+    <string name="born_city">Esmeraldas</string>
+    <string name="college">Viçosa</string>
+    <string name="localizacao">Localiação</string>
+</resources>
