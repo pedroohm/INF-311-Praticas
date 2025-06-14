@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Switch Lanterna -->
+    <LinearLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lanterna:" />
+
+        <Switch
+            android:id="@+id/sw_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Switch Vibração -->
+    <LinearLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibração:" />
+
+        <Switch
+            android:id="@+id/sw_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- TextView Leitura Luminosidade -->
+    <TextView
+        android:id="@+id/tv_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luminosidade: -- lx"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/leftLayout"
+        android:layout_marginTop="32dp"/>
+
+    <!-- TextView Leitura Proximidade -->
+    <TextView
+        android:id="@+id/tv_proximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximidade: -- cm"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_light"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botão Classificar -->
+    <Button
+        android:id="@+id/btn_classify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classificar Leituras"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_proximity"
+        android:layout_marginTop="32dp"/>
+</RelativeLayout>
